@@ -27,8 +27,8 @@ export const config = {
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
             args: [
-                // '--window-size=1920,1080',
-                // '--headless',
+                //'--window-size=1920,1080',
+                //'--headless',
                 '--no-sandbox',
                 '--disable-gpu',
                 '--disable-setuid-sandbox',
@@ -43,7 +43,7 @@ export const config = {
             ]
         }
     }],
-    logLevel: 'silent',
+    logLevel: 'info',  // silent, debug
     bail: 0,
     baseUrl: 'https://team8-2022brno.herokuapp.com',
     waitforTimeout: 10000,

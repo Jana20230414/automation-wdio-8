@@ -7,7 +7,9 @@ describe('Czechitas Login Page', async () => {
 
         await browser.reloadSession();
 
-        await browser.url('/prihlaseni');
+        //await browser.url('/prihlaseni');
+        await browser.url('https://team8-2022brno.herokuapp.com/');
+        console.log(await browser.getUrl());
 
         const windowSize = await browser.getWindowSize();
         console.log(windowSize);
@@ -15,7 +17,7 @@ describe('Czechitas Login Page', async () => {
         const allCookies = await browser.getCookies();
         console.log(allCookies);
 
-        await browser.saveScreenshot('login_page.png');
+        await browser.saveScreenshot('login_page_JMN.png');
 
         await browser.pause(5000);
 
