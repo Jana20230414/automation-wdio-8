@@ -23,7 +23,8 @@ export const config = {
     maxInstances: 10,
     capabilities: [{
         maxInstances: 5,
-        browserName: 'chrome',
+        browserName: 'chrome',   // firefox
+        //browserName: 'firefox',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
             args: [
@@ -43,7 +44,7 @@ export const config = {
             ]
         }
     }],
-    logLevel: 'info',  // silent, debug
+    logLevel: 'debug',  // silent, debug, info
     bail: 0,
     baseUrl: 'https://team8-2022brno.herokuapp.com',
     waitforTimeout: 10000,
